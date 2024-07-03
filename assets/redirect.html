@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Redirect Page</title>
+    <link rel="shortcut icon" href="">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <span style="font-size: 50px; padding-top: 10%;" class="material-symbols-outlined">check_circle</span>
+    </div>
+    <h1 style="text-align: center; font-weight: 100;">Awesome!</h1>
+    <p style="text-align: center; font-weight: 100; padding-top: 12px; font-size: 20px">
+        User successfully logged in to TitanFile.
+    </p>
+
+    <!-- <button onclick="closeDialog()">Test Dialog</button> -->
+
+    <script>
+        Office.onReady(function (info) {
+        });
+
+        // Get the current URL
+        const currentUrl = window.location.href;
+        console.log(currentUrl);
+
+        const getCodeFromUrl = (currentUrl) => {
+            const params = new URLSearchParams(currentUrl.split('?')[1]);
+            return params.get('code');
+        };
+
+        const code = getCodeFromUrl(currentUrl);
+        console.log('Code:', code);
+
+        // function closeDialog() {
+        //     Office.context.ui.messageParent(JSON.stringify("close dialog"));
+        // }
+
+        Office.onReady(function (officeContext) {
+            if (officeContext) {
+                if (code) {
+                    Office.context.ui.messageParent(code);
+                } else {
+                    console.log("code not found");
+                }
+            } else {
+                console.error('Office context not available.');
+            }
+        });
+    </script>
+</body>
+
+</html>
