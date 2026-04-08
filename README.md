@@ -14,21 +14,21 @@ TitanFile Outlook Add-in enables users to securely upload and share files via Ti
 
 ## ✨ Features
 
-- 🔐 Secure file upload via TitanFile  
-- 📎 Replace email attachments with secure links  
-- 📩 Send large files safely from Outlook  
-- 🛡️ End-to-end encrypted file sharing  
-- 📊 Track file access and activity (optional)  
-- 💻 Works with Outlook Web and Desktop  
+-  Secure file upload via TitanFile  
+-  Replace email attachments with secure links  
+-  Send large files safely from Outlook  
+-  End-to-end encrypted file sharing  
+-  Track file access and activity (optional)  
+-  Works with Outlook Web and Desktop  
 
 ---
 
 ## 🎯 Use Cases
 
-- ⚖️ Legal firms sharing confidential documents  
-- 🏢 Businesses handling sensitive files  
-- 🧑‍💼 Professionals sending large attachments securely  
-- 🔐 Compliance-driven industries (finance, healthcare)  
+-  Legal firms sharing confidential documents  
+-  Businesses handling sensitive files  
+-  Professionals sending large attachments securely  
+-  Compliance-driven industries (finance, healthcare)  
 
 ---
 
